@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "verify": "eslint src && tsc --noEmit && prettier . --check",
+    "verify:fix": "eslint src --fix && tsc --noEmit && prettier . --write"
+  },
+  "dependencies": {
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "bun-types": "latest",
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "10.0.1",
+    "globals": "^15.14.0",
+    "prettier": "3.4.2",
+    "typescript-eslint": "^8.23.0"
+  },
+  "module": "src/index.js"
+}
