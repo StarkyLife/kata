@@ -1,3 +1,6 @@
 # Ignore artifacts:
 build
 coverage
+test-results
+playwright-report
+bun.lockb
